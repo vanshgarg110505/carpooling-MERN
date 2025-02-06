@@ -2,7 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
-const UserLogout = () => {
+export const UserLogout = () => {
 
     const token = localStorage.getItem('token')
     const navigate = useNavigate()
