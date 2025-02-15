@@ -1,6 +1,6 @@
 import React from "react";
 
-const LocationSearchPanel = () => {
+const LocationSearchPanel = (props) => {
     // SAMPLE ARRAY FOR LOCATION
     const location = [
         "24B,Near Kapoor's cafe,Bhopal",
@@ -12,8 +12,11 @@ const LocationSearchPanel = () => {
     <div>
       {/*THIS IS JUST A SAMPLE DATA */}
       {
-        location.map(function(elem){
-            return  <div className="flex gap-4 border-2 border-gray-50  active:border-gray-50  p-3 rounded-xl items-center my-2 justify-start">
+        location.map(function(elem, idx){
+            return  <div key={idx} onClick={()=>{
+              props.setVehiclePanel(true)
+              props.setPanelOpen(false)
+            }} className="flex gap-4 border-2 border-gray-50  active:border-gray-50  p-3 rounded-xl items-center my-2 justify-start">
             <h2 className="bg-[#eee] h-8 w-12 flex items-center justify-center rounded-full">
               <i className="ri-map-pin-fill "></i>
             </h2>
