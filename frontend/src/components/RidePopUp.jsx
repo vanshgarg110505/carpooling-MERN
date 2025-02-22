@@ -16,7 +16,7 @@ const RidePopUp = (props) => {
       <div className="flex items-center justify-between p-3 bg-yellow-400 rounded-lg mt-4">
         <div className="flex items-center gap-3">
           <img
-            className="h-12 w-10 rounded-full object-cover"
+            className="h-12 w-12 rounded-full object-cover"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3tzGh_8fgG0kuFPxwh_vvey4zzlrDz5nz7A&s"
             alt=""
           />
@@ -53,22 +53,19 @@ const RidePopUp = (props) => {
             </div>
           </div>
         </div>
-        <div className="flex  mt-5 w-full items-center justify-between">
-          <button
-            onClick={() => {
-              props.setRidePopupPanel(false);
-            }}
-            className=" mt-1 bg-gray-300 text-gray-700 font-semibold p-3 px-10 rounded-lg "
-          >
-            Ignore
-          </button>
-          <button
-            onClick={() => {
-              props.setConfirmRidePopupPanel(true);
-            }}
-            className="text-white font-semibold p-3 px-10 rounded-lg bg-green-600"
+        <div className='mt-5 w-full '>
+          <button onClick={() => {
+              props.setConfirmRidePopupPanel(true)
+              props.confirmRide()
+            }} className=' bg-green-600 w-full text-white font-semibold p-2 px-10 rounded-lg'
           >
             Accept
+          </button>
+          <button onClick={() => {
+            props.setRidePopupPanel(false)
+          }} className='mt-2 w-full bg-gray-300 text-gray-700 font-semibold p-2 px-10 rounded-lg'
+          >
+            Ignore
           </button>
         </div>
       </div>
