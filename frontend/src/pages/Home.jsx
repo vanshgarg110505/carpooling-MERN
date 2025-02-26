@@ -13,6 +13,7 @@ import { SocketContext } from "../context/SocketContext";
 
 import { useNavigate } from "react-router-dom";
 import { UserDataContext } from "../context/UserContext";
+import LiveTracking from "../components/LiveTracking";
 
 const Home = () => {
   const [pickup, setPickup] = useState("");
@@ -218,10 +219,7 @@ const Home = () => {
       />
       <div className="h-screen w-screen">
         {/*IMAGE FOR TEMPORARY USE */}
-        <img
-          className="h-full w-full object-cover"
-          src="https://miro.medium.com/v2/resize:fit:1400/0*gwMx05pqII5hbfmX.gif"
-        />
+        <LiveTracking />
       </div>
       <div className="flex flex-col justify-end absolute h-screen top-0 w-full">
         <div className="h-[30%] bg-white p-6 relative">
