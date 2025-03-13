@@ -40,3 +40,11 @@ A **fully functional Uber Clone** built using the **MERN stack** (MongoDB, Expre
 * Test login/logout flows.
 * Book a ride and observe real-time updates.
 * Check distance and time calculations from Google Maps API.
+
+
+## Commands To Run :- 
+cd frontend
+npm run dev
+
+cd backend
+npx nodemon
