@@ -43,8 +43,8 @@ A **fully functional Uber Clone** built using the **MERN stack** (MongoDB, Expre
 
 
 ## Commands To Run :- 
-cd frontend
-npm run dev
+  - cd frontend
+  - npm run dev
 
-cd backend
-npx nodemon
+  - cd backend
+  - npx nodemon
