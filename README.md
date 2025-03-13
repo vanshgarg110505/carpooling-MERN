@@ -1,6 +1,6 @@
-# 🚖 Uber Clone - MERN Stack Application
+# 🚖 Ride Sync - MERN Stack Application
 
-A **fully functional Uber Clone** built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js). This project allows users to register, book rides, and provides captains (drivers) with ride management features. Real-time location tracking, Google Maps integration, authentication, and dynamic UI components are all included to give a complete Uber-like experience.
+A **fully functional Carpooling Web Application** built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js). This project allows users to register, book rides, and provides captains (drivers) with ride management features. Real-time location tracking, Google Maps integration, authentication, and dynamic UI components are all included to give a complete Uber-like experience.
 
 ## 🌟 **Features**
 
